@@ -1,0 +1,49 @@
+import 'dart:io';
+void main() {
+  print("*******************************************THIS IS MURTAZA ABBAS MARKSHEET*******************************************");
+  print("YOUR MARKS IN ALL SUBJECTS");
+  print("ENTER YOUR MARKS IN MATHEMATICS");
+  num mathematics=num.parse(stdin.readLineSync()??'0');
+  print("                                          YOUR MARKS IN MATHEMATICS:" " $mathematics");
+  print("ENTER YOUR MARKS IN SCIENCE");
+  num science=num.parse(stdin.readLineSync()??'0');
+  print("                                          YOUR MARKS IN SCIECNE:" " $science");
+  print("ENTER YOUR MARKS IN ENGLISH");
+  num english=num.parse(stdin.readLineSync()??'0');
+  print("                                          YOUR MARKS IN ENGLISH:" " $english");
+  print("ENTER YOUR MARKS IN URDU");
+  num urdu=num.parse(stdin.readLineSync()??'0');
+  print("                                          YOUR MARKS IN URDU:" " $urdu");
+  print("ENTER YOUR MARKS IN GEOGRAPHY");
+  num geography=num.parse(stdin.readLineSync()??'0');
+  print("                                          YOUR MARKS IN GEOGRAPHY:" " $geography");
+  print("ENTER TOTAL MARKS OF ALL SUBJECTS");
+  num total_marks=num.parse(stdin.readLineSync()??'0');
+  print("ALL FIVE SUBJECTS TOTAL MARKS ARE:" "$total_marks ");
+  num obt_marks = geography + mathematics + science + english + urdu;
+  print("YOUR OBTAINED MARKS FOR ALL FIVE SUBJECTS ARE: " "$obt_marks");
+  num percentage=obt_marks/total_marks*100;
+  print("YOUR PERCENTAGE IS: ""$percentage");
+   if (percentage>=80 ){
+    print("Your Grade is A+");
+
+  }else 
+  if(percentage>=70){
+    print("Your Grade is A");   
+  }
+  else
+  if(percentage>=60){
+    print("Your Grade is B");
+  }
+  else
+  if(percentage>=50){
+    print("Your Grade is C");
+  }
+  else{
+    print ("Your Grade is D");
+  }
+
+}
+
+
+
